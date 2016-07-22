@@ -3,6 +3,8 @@
 
 This project is based on a CodeCourse.com video with personal changes to start faster with Slim 3.
 With Auth provided.
+#Installation 
+    composer require fabrice/laravel-clone
 
 **Packages Included**
 - Slim PHP DI  [Slim-Bridge](https://github.com/PHP-DI/Slim-Bridge)
