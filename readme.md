@@ -5,7 +5,7 @@ This project is based on a CodeCourse.com video with personal changes to start f
 With Auth provided.
 
 **Packages Included**
-- Slim Twig PHP DI  [Slim-Bridge](https://github.com/PHP-DI/Slim-Bridge)
+- Slim PHP DI  [Slim-Bridge](https://github.com/PHP-DI/Slim-Bridge)
 - Eloquent Model  [Eloquent](https://github.com/illuminate/database)
 - PHP Mailer Wrapper  [PHPMailer](https://github.com/PHPMailer/PHPMailer)
 - Environment File .env [vlucas/phpdotenv](https://github.com/vlucas/phpdotenv)
