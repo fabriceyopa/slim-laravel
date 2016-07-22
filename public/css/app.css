@@ -1,0 +1,26 @@
+body{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    }
+.dtp div.dtp-date, .dtp div.dtp-time {
+    background: #F19E1F !important;
+    }
+.dtp .p10 > a {
+    color: #ffffff !important;
+    }
+.dtp > .dtp-content > .dtp-date-view > header.dtp-header {
+    background: #F19E1F !important;
+    }
+.dtp table.dtp-picker-days tr > td > a.selected {
+    background: #F19E1F !important;
+    }
+.text-white{
+    color: #ffffff;
+    }
+.mar-no{
+    margin-bottom: 0;
+    }
+.bs{
+    border-radius: 0 !important;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important;
+    }

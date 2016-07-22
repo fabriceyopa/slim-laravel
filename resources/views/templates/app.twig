@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laravel Like with Slim</title>
+
+        <link href="{{ base_url() }}/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+        <link href="{{ base_url() }}/css/app.css" type="text/css" rel="stylesheet" media="all">
+
+        {% block styles %} {% endblock %}
+
+    </head>
+<body>
+    {% include 'templates/partials/navigation.twig' %}
+    <div class="container">
+        {% include 'templates/partials/flash.twig' %}
+        {% block content %} {% endblock %}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>

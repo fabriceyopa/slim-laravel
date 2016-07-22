@@ -1,0 +1,56 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-sm-8">
+            {% if basket.count %}
+                <div class="well">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in basket.all %}
+                            <tr>
+                                <td><a href="{{ path_for('product.get',{slug:item.slug}) }}">{{ item.title }}</a></td>
+                                <td>${{ item.price | number_format(2) }}</td>
+                                <td>
+                                    <form action="{{ path_for('cart.update',{slug:item.slug}) }}" method="post" class="form-inline">
+                                        <select name="quantity" class="form-control" id="">
+                                            {% for num in 1..item.stock %}
+                                                <option value="{{ num }}" {% if num == item.quantity %} selected {% endif %}>{{ num }}</option>
+                                            {% endfor %}
+                                            <option value="0">None</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-default btn-sm">Update</button>
+                                    </form>
+                                </td>
+                            </tr>
+
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <p>You Have no items in your cart. <a href="{{ path_for('home') }}">Start Shooping</a></p>
+            {% endif %}
+        </div>
+        <div class="col-sm-4">
+            {% if basket.count and basket.subTotal %}
+                <div class="well">
+                    <h4>Cart Summary</h4>
+                    <hr>
+                    {% include 'cart/partials/summary.twig' %}
+
+                    <a href="#" class="btn btn-default">Checkout</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

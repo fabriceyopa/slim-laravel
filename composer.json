@@ -1,0 +1,33 @@
+{
+    "name": "fabrice/laravel-clone",
+    "license": "Apache-2.0",
+    "description": "A Laravel like base on Slim 3",
+    "authors": [
+        {
+            "name": "Fabrice Yopa",
+            "email": "fabrice_yopa@yahoo.fr",
+            "role": "Creator",
+            "homepage": "http://fabricelepro.ga"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.1",
+        "php-di/slim-bridge": "^1.0",
+        "illuminate/database": "^5.2",
+        "vlucas/phpdotenv": "~2.3",
+        "slim/csrf": "^0.7.0",
+        "slim/flash": "^0.1.0",
+        "hassankhan/config": "^0.10.0",
+        "respect/validation": "^1.1",
+        "phpmailer/phpmailer": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fabrice\\":"app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    }
+}
