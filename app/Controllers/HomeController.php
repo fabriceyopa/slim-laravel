@@ -22,8 +22,7 @@
 //				new SendWelcomeMail
 //			]);
 //			$event->dispatch();
-			$products = Product::all();
-			return $this->render('home', compact('products'));
+			return $this->render('home');
 		}
 
 

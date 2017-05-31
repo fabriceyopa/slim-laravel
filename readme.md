@@ -5,7 +5,10 @@ This project is based on a CodeCourse.com video with personal changes to start f
 With Auth provided.
 #Installation 
     composer require fabrice/laravel-clone
-
+#Runing
+    cp env.example .env
+And edit your database credential
+   
 **Packages Included**
 - Slim PHP DI  [Slim-Bridge](https://github.com/PHP-DI/Slim-Bridge)
 - Eloquent Model  [Eloquent](https://github.com/illuminate/database)
@@ -38,3 +41,7 @@ With Auth provided.
 - Adding Tests
 
 any suggestion is welcome
+
+## Demo
+A complete demo is coming, with Email, Queue, Json and more.
+Stay stune.
