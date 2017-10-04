@@ -1,11 +1,12 @@
-#Slim 3 Skeleton 
+# Slim 3 Skeleton 
 **This is Laravel like Project base on Slim 3**
 
 This project is based on a CodeCourse.com video with personal changes to start faster with Slim 3.
 With Auth provided.
-#Installation 
+
+# Installation 
     composer require fabrice/laravel-clone
-#Runing
+# Runing
     cp env.example .env
 And edit your database credential
    
