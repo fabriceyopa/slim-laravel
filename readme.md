@@ -1,7 +1,7 @@
 # Slim 3 Skeleton 
 **This is Laravel like Project base on Slim 3**
 
-This project is based on a CodeCourse.com video with personal changes to start faster with Slim 3.
+This project is my personal start faster with Slim 3.
 With Auth provided.
 
 # Installation 
